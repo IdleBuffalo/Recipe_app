@@ -11,4 +11,6 @@ class Recipe < ActiveRecord::Base
 
   validates :title, :description, :image, presence: true
 
+  belongs_to :user
+
 end
